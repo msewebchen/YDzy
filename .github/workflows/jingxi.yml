@@ -27,8 +27,7 @@ jobs:
       - name: '运行 【京喜】'
         if: env.JD_COOKIE
         run: |
- cd ~/Scripts
- node Task/jingxi.js
+  node jingxi.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
