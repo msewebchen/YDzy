@@ -1,5 +1,5 @@
 
-name: 互助码自动上车
+name: 互助码自动上车1
 
 on:
   workflow_dispatch:
