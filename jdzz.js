@@ -27,8 +27,8 @@ const $ = new Env("京东赚赚");
 
 const jdCookieNode = $.isNode() ? require("./jdCookie.js") : "";
 const JD_API_HOST = "https://api.m.jd.com";
-$.tokens = [$.getdata("54F042D211D673DFD4A1BBD80E47E5D842E61A65E579B647E4CAC99AECB373AB
-") || "", $.getdata("jdzz_token2") || ""];
+$.tokens = [$.getdata("jdzz_token1") || "54F042D211D673DFD4A1BBD80E47E5D842E61A65E579B647E4CAC99AECB373AB
+", $.getdata("jdzz_token2") || ""];
 $.exchangePrize = parseInt($.getdata("jd_zzExchangePrize")) || 0;
 $.showLog = $.getdata("zz_showLog")
   ? $.getdata("zz_showLog") === "true"
