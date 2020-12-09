@@ -15,7 +15,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/whyour/hundun.git ~/Scripts
+          git clone https://github.com/whyour/hundun.git ~/hundun
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -27,7 +27,7 @@ jobs:
       - name: '运行 【惊喜农场】'
         if: env.JD_COOKIE
         run: |
-          cd ~/Scripts
+          cd ~/hundun
           node quanx/jx_nc.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
